@@ -21,7 +21,7 @@ jobs:
           exit 1
 
       - name: Recovery Step
-        if: failure() && steps.failing-step.outcome == 'failure'
+        if: failure()
         run: |
           echo "🚑 A failure was detected. Executing recovery..."
           # Add your recovery commands here (e.g., cleanup, rollback, notification).
