@@ -26,7 +26,6 @@ jobs:
           echo "🚑 A failure was detected. Executing recovery..."
           # Add your recovery commands here (e.g., cleanup, rollback, notification).
           echo "Recovery actions completed."
-          exit 0
 
       - name: Post-Recovery Step
         if: always()
